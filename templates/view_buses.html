@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Buses</title>
+    <link rel="stylesheet" href="/static/css/view_busses.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>🚌 Available Buses</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>ID</th>
+                <th>Bus Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Price</th>
+                <th>Seats</th>
+            </tr>
+            {% for bus in buses %}
+            <tr>
+                <td>{{ bus.bus_id }}</td>
+                <td>{{ bus.bus_name }}</td>
+                <td>{{ bus.source }}</td>
+                <td>{{ bus.destination }}</td>
+                <td>₹{{ bus.price }}</td>
+                <td>{{ bus.seats_available }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{{ url_for('user_dashboard') }}">Back to Dashboard</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="/static/css/dashboard.css">
+ 
+    
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome</h2>
+    <ul>
+      <li><a href="{{ url_for('view_buses') }}">View Buses</a></li>
+      <li><a href="{{ url_for('book_ticket_page') }}">Book Ticket</a></li>
+      <li><a href="{{ url_for('cancel_ticket_page') }}">Cancel Ticket</a></li>
+      <li><a href="{{ url_for('wallet') }}">Wallet</a></li>
+      <li><a href="{{ url_for('logout') }}">Logout</a></li>
+    </ul>
+  </div>
+</body>
+</html>

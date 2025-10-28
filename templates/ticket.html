@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Ticket</title>
+  <link rel="stylesheet" href="/static/css/ticket.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🎫 Ticket Confirmation</h2>
+    <p><strong>Passenger ID:</strong> {{ ticket.passenger_id }}</p>
+    <p><strong>Name:</strong> {{ ticket.name }}</p>
+    <p><strong>Age:</strong> {{ ticket.age }}</p>
+    <p><strong>Gender:</strong> {{ ticket.gender }}</p>
+    <p><strong>Bus:</strong> {{ ticket.bus_name }}</p>
+    <p><strong>Route:</strong> {{ ticket.source }} → {{ ticket.destination }}</p>
+    <p><strong>Price:</strong> ₹{{ ticket.price }}</p>
+    <p><strong>Booked by:</strong> {{ ticket.username }}</p>
+    <br>
+    <a href="{{ url_for('user_dashboard') }}">Back to Dashboard</a>
+  </div>
+</body>
+</html>

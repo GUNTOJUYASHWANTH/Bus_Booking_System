@@ -1,0 +1,52 @@
+/* style.css */
+
+body {
+ margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url(/static/css/images/with\ bus\ image.jpg);
+  background-size: cover; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 80px auto;
+  background: rgba(255, 226, 226, 0.92);
+  padding: 30px 100px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 18px 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 12px 28px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  font-size: 16px;
+}
+
+a:hover {
+  background-color: #0056b3;
+}

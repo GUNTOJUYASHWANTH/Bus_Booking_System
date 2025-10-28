@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Users</title>
+  <link rel="stylesheet" href="/static/css/view_users.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h2>Registered Users</h2>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Phone</th>
+        <th>Balance</th>
+      </tr>
+      {% for user in users %}
+      <tr>
+        <td>{{ user.user_id }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.phone }}</td>
+        <td>₹{{ user.balance }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <br><a href="{{ url_for('admin_dashboard') }}">Back to Dashboard</a>
+  </div>
+</body>
+</html>

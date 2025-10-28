@@ -1,0 +1,61 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(/static/css/images/garuda.webp);
+  /* background: #f2f2f2; */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+h2 {
+  text-align: center;
+  color: #007BFF;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: #007BFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Watermark */
+body::before {
+  content: "Chintu Tours and Travels";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="/static/css/book_ticket.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>🎟️ Book a Ticket</h2>
+        <form method="post">
+            <label>Bus ID:</label><br>
+            <input type="number" name="bus_id" required><br>
+            <label>Name:</label><br>
+            <input type="text" name="name" required><br>
+            <label>Age:</label><br>
+            <input type="number" name="age" required><br>
+            
+            <label>Gender:</label><br>
+            <select name="gender" required>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select><br>
+            
+
+            <br>
+            <button type="submit">Book Ticket</button>
+        </form>
+    </div>
+</body>
+</html>
